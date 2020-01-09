@@ -1,14 +1,17 @@
-.space-between, .imba-head, .imba-what .what-cont, .imba-nav ul li, .imba-super ul, .imba-schools ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+@charset "UTF-8";
+input, select { font-family: '微软雅黑'; }
+
+.space-between, .imba-head, .imba-what .what-cont, .imba-nav ul li, .imba-super ul, .imba-schools ul, .imba-win ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .space-around, .imba-nav ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around; }
 
 .wrap { width: 10rem; margin: 0 auto; }
 
-.imba-head { padding: 0.3466666667rem 0.2666666667rem; }
+.imba-head { height: 1.0666666667rem; padding: 0 0.2666666667rem; }
 .imba-head .logo { width: 2.4533333333rem; }
-.imba-head .tel { display: block; width: 0.6666666667rem; height: 0.6666666667rem; background: url(../images/tel.png) no-repeat; background-size: 100% 100%; }
+.imba-head .tel { display: none; width: 0.6666666667rem; height: 0.6666666667rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/tel.png) no-repeat; background-size: 100% 100%; }
 
-.imba-banner { display: none; }
+.imba-banner { margin-top: -1.0666666667rem; }
 .imba-banner a { display: block; width: 10rem; height: 6.2666666667rem; }
 
 .imba-title { font-size: 0.5333333333rem; line-height: 0.5333333333rem; color: #333333; font-weight: bold; text-align: center; }
@@ -18,7 +21,7 @@
 
 .imba-btn { background-color: #ec5234; color: #fff; }
 
-.imba-what { display: none; padding: 0.9333333333rem 0.2666666667rem; }
+.imba-what { padding: 0.6666666667rem 0.2666666667rem 0.4rem; }
 .imba-what .imba-title { margin-bottom: 0.6666666667rem; }
 .imba-what .what-cont { background-color: #ffffff; -webkit-box-shadow: 0.08rem 0px 0.2666666667rem 0px rgba(19, 29, 60, 0.16); box-shadow: 0.08rem 0px 0.2666666667rem 0px rgba(19, 29, 60, 0.16); border-radius: 0.2666666667rem; padding: 0.5333333333rem 0 0.2666666667rem; }
 .imba-what .what-cont .cont-col .col-title { height: 0.7466666667rem; line-height: 0.7466666667rem; border: solid 1px #ec5234; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 0.4rem; font-weight: bold; color: #ec5234; padding-right: 0.1066666667rem; }
@@ -41,18 +44,18 @@
 .imba-what .what-cont .cont-col:nth-of-type(3) .col-title span { background: #999999; }
 .imba-what .what-cont .cont-col:nth-of-type(3) li { color: #666666; }
 
-.imba-enter { display: none; padding: 0 0.2666666667rem; }
+.imba-enter { padding: 0.4rem 0.2666666667rem; }
 .imba-enter .sign-in { padding-top: 0.6666666667rem; }
 .imba-enter select, .imba-enter input { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 100%; height: 0.9066666667rem; line-height: 0.9066666667rem; border-radius: 0.1333333333rem; border: solid 1px #cccccc; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 0.2666666667rem; font-size: 0.3466666667rem; }
-.imba-enter select { padding: 0 1em; background: url(../images/sel.png) no-repeat 96%; background-size: 0.3066666667rem 0.1733333333rem; }
+.imba-enter select { padding: 0 1em; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/sel.png) no-repeat 96%; background-size: 0.3066666667rem 0.1733333333rem; }
 .imba-enter input { text-indent: 1em; }
 .imba-enter input[type="submit"] { border: none; border-radius: 0.4533333333rem; font-size: 0.4rem; }
 
-.imba-choice { display: none; padding: 0 0.2666666667rem 0.4rem; }
+.imba-choice { padding: 0.2666666667rem 0.2666666667rem 0.4rem; }
 .imba-choice .choice-cont { width: 100%; border-radius: 0.1466666667rem; border: dotted 1px #bbbbbb; margin-top: 0.6666666667rem; padding: 0.5333333333rem 0.2666666667rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .imba-choice .choice-cont .cont-title { font-size: 0.4rem; line-height: 0.4rem; color: #333333; margin-bottom: 0.5333333333rem; text-align: center; }
 
-.imba-nav { display: none; padding: 0 0.2666666667rem; }
+.imba-nav { padding: 0 0.2666666667rem; }
 .imba-nav ul { width: 100%; border: 1px dotted #bbbbbb; padding-top: 0.8rem; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 0.1466666667rem; }
 .imba-nav ul li { margin-bottom: 0.8rem; }
 .imba-nav ul .li-l { width: 1.0666666667rem; margin-right: 0.1866666667rem; }
@@ -65,18 +68,59 @@
 .imba-super ul .li-bg .bg-title { width: 100%; font-size: 0.3466666667rem; font-weight: bold; line-height: 0.6666666667rem; color: #ffffff; position: absolute; bottom: 0; background: rgba(51, 51, 51, 0.7); text-align: center; }
 .imba-super ul .li-text { text-align: center; font-size: 0.2933333333rem; line-height: 0.3066666667rem; color: #666666; padding: 0.4rem 0 0.32rem; }
 .imba-super ul .li-text span:nth-of-type(1) { margin-right: 0.1333333333rem; }
-.imba-super ul .li-btn { display: block; width: 2.4rem; height: 0.6933333333rem; line-height: 0.6933333333rem; border-radius: 0.3466666667rem; border: solid 1px #ec5234; color: #ec5234; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; margin: 0 auto; }
+.imba-super ul .li-btn { display: block; width: 2.4rem; height: 0.6933333333rem; line-height: 0.6933333333rem; border-radius: 0.3466666667rem; border: solid 1px #ec5234; color: #ec5234; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; margin: 0 auto; font-size: 0.32rem; }
 .imba-super ul .li-btn:hover { background: #ec5234; color: #fff; }
 
 .imba-down { padding: 0 0.2666666667rem; }
-.imba-down a { display: block; width: 100%; height: 2.6666666667rem; background: url(../images/down.png) no-repeat; background-size: 100% auto; }
+.imba-down a { display: block; width: 100%; height: 2.6666666667rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/down.png) no-repeat; background-size: 100% auto; }
 
-.imba-schools { padding: 0 0.2666666667rem; }
+.imba-schools { padding: 0.6666666667rem 0.2666666667rem 0.4rem; }
 .imba-schools ul { padding: 0.6666666667rem 0 0.4rem; }
 .imba-schools ul li { width: 48%; height: 1.4533333333rem; margin-bottom: 4%; background-color: #ffffff; border: solid 1px #dddddd; padding: 0.0533333333rem 0; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; }
 .imba-schools ul li img { height: 100%; }
 .imba-schools ul li.more { border: none; line-height: 1.3333333333rem; }
-.imba-schools ul li.more em { display: inline-block; width: 0.16rem; height: 0.16rem; background: #bbbbbb; border-radius: 50%; }
+.imba-schools ul li.more em { display: inline-block; width: 0.16rem; height: 0.16rem; background: #bbbbbb; border-radius: 50%; margin: 0 0.0533333333rem; }
 .imba-schools .imba-btn { display: block; width: 100%; height: 0.9066666667rem; line-height: 0.9066666667rem; border-radius: 0.4533333333rem; text-align: center; font-size: 0.4rem; }
+
+.imba-lce { padding: 0.4rem 0 0.6666666667rem; }
+.imba-lce .imba-subtitle { margin-bottom: 0.5333333333rem; }
+.imba-lce .swiper-container { width: 8.2666666667rem; height: 5.0666666667rem; padding-bottom: 0.6666666667rem; }
+.imba-lce .swiper-container .swiper-pagination-bullets { bottom: 0; }
+.imba-lce .swiper-container img { width: 100%; height: 100%; }
+.imba-lce .swiper-pagination-bullet { width: 0.2933333333rem; height: 0.2933333333rem; }
+.imba-lce .swiper-pagination-bullet-active { background: #f55e38; }
+
+.imba-win { padding: 0 0.2666666667rem 0.4rem; }
+.imba-win .win-title { font-size: 0.56rem; line-height: 0.96rem; color: #666666; text-align: center; }
+.imba-win .win-cont { padding-top: 0.5333333333rem; }
+.imba-win .big-img { position: relative; margin-bottom: 0.4rem; }
+.imba-win li { width: 48%; margin-bottom: 4%; position: relative; }
+.imba-win .win-txt { width: 100%; line-height: 0.64rem; font-size: 0.32rem; text-align: center; background: rgba(0, 0, 0, 0.6); color: #fff; position: absolute; bottom: 0; }
+
+.imba-classes { padding: 0.5333333333rem 1rem 0.6666666667rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/bg_1.png) no-repeat; background-size: 100% 100%; }
+.imba-classes .classes-title { padding: 0 0.2666666667rem; font-size: 0.6133333333rem; line-height: 0.8rem; color: #ffffff; text-align: center; margin-bottom: 0.6666666667rem; }
+.imba-classes .classes-title span { color: #f76740; }
+.imba-classes input { width: 100%; height: 0.9066666667rem; line-height: 0.9066666667rem; border-radius: 0.1333333333rem; border: solid 1px #cccccc; -webkit-box-sizing: border-box; box-sizing: border-box; margin-bottom: 0.2666666667rem; text-indent: 1em; font-size: 0.3466666667rem; }
+.imba-classes .imba-btn { border: none; text-indent: 0; border-radius: 0.4533333333rem; font-size: 0.4rem; }
+
+.imba-footer { width: 100%; padding: 0.24rem 0; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #333333; font-size: 0.2666666667rem; line-height: 0.4266666667rem; color: rgba(250, 250, 250, 0.4); text-align: center; }
+
+.imba-consult { width: 10rem; height: 1.8666666667rem; padding: 0.2666666667rem 0.2666666667rem; -webkit-box-sizing: border-box; box-sizing: border-box; background: #fff; position: fixed; bottom: 0; z-index: 30; }
+.imba-consult .imba-btn { display: block; width: 100%; height: 1.28rem; line-height: 1.28rem; border-radius: 0.1333333333rem; text-align: center; font-size: 0.4rem; }
+.imba-consult .imba-btn .icon { display: inline-block; width: 0.52rem; height: 0.4933333333rem; background: url(https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/icon_7.png) no-repeat; background-size: 100% 100%; vertical-align: middle; }
+
+body { padding-bottom: 1.8666666667rem; }
+
+/* 弹窗 */
+.appoint-popup { position: fixed; top: 0; bottom: 0; left: 0; right: 0; margin: auto; z-index: 40; display: none; }
+.appoint-popup .masklayer { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); }
+.appoint-popup .popup-cont { width: 7.4666666667rem; height: 10.6666666667rem; background: url("https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/popup.png") no-repeat; background-size: 100% 100%; text-align: center; padding-top: 2.1333333333rem; -webkit-box-sizing: border-box; box-sizing: border-box; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 10; }
+.appoint-popup .sign-in { padding: 0.6666666667rem 0.5333333333rem 0.7733333333rem; }
+.appoint-popup .sign-in input { width: 100%; height: 0.9333333333rem; line-height: 0.9333333333rem; margin-bottom: 0.32rem; background-color: #f8f8f8; border-radius: 0.08rem; border: solid 1px #cccccc; font-size: 0.3733333333rem; text-indent: 1em; }
+.appoint-popup .sign-in input[type="submit"] { background-color: #ec5234; border: solid 1px #ec5234; color: #ffffff; font-size: 0.4rem; text-indent: 0; }
+.appoint-popup .sign-in select { width: 100%; height: 0.9333333333rem; line-height: 0.9333333333rem; margin-bottom: 0.32rem; border-radius: 0.08rem; border: solid 1px #cccccc; font-size: 0.3733333333rem; background: url("https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/sel.png") no-repeat 96% #f8f8f8; background-size: 0.3066666667rem 0.1733333333rem; padding: 0 0.3733333333rem; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.appoint-popup .sign-in select option { color: #333333; }
+.appoint-popup .sign-in select option:first-child { color: #999999; }
+.appoint-popup .close { display: block; width: 1.0666666667rem; height: 1.0666666667rem; position: absolute; bottom: 0; left: 0; right: 0; margin: auto; cursor: pointer; }
 
 /*# sourceMappingURL=index.css.map */

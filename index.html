@@ -5,26 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/base.css">
-  <script src="js/thea.debug.js"></script>
-  <link rel="stylesheet" href="css/index.css">
-  <title>MBA-竞价页</title>
+  <link rel="stylesheet" href="https://img.thea.cn/public/css/base.css">
+  <script src="https://img.thea.cn/public/js/thea.debug.js"></script>
+  <link rel="stylesheet" href="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/css/index.css?1">
+
+  <link rel="stylesheet" href="https://img.thea.cn/public/css/swiper-3.3.1.min.css">
+  <script src="https://img.thea.cn/public/js/swiper-3.3.1.min.js"></script>
+
+  <script src="https://img.thea.cn/js/jquery-1.12.3.min.js"></script>
+  <title></title>
 </head>
 
 <body>
 
-  <div class="wrap">
+  <div class="wrap defaults_dataid" data-id="2-0-30-0-0-0-1-深圳MBA研修">
 
     <div class="imba-head">
       <div class="head-l">
-        <img src="images/logo.png" alt="诺达" class="logo">
+        <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/logo.png" alt="诺达" class="logo">
       </div>
       <div class="head-r">
-        <a href="" class="tel"></a>
+        <i class="tel"></i>
       </div>
     </div>
-    <div class="imba-banner" style="background: url(images/banner.png);background-size: 100%;">
-      <a href=""></a>
+    <div class="imba-banner"
+      style="background: url(https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/banner.png);background-size: 100%;">
+      <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()"></a>
     </div>
     <div class="imba-what">
       <div class="imba-title">
@@ -44,7 +50,7 @@
         </div>
         <div class="cont-col">
           <div class="col-pk">
-            <img src="images/pk.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/pk.png" alt="">
           </div>
           <ul>
             <li><span class="imba-btn">招生条件</span></li>
@@ -72,14 +78,18 @@
       </div>
       <form class="sign-in">
         <select class="user-con">
-          <option value="">请选择您的最高学历</option>
+          <option selected="selected" value="" style="display: none">请选择您的最高学历</option>
           <option value="大专">大专</option>
           <option value="本科">本科</option>
+          <option value="硕士">硕士</option>
+          <option value="其他">其他</option>
         </select>
         <select class="user-con">
-          <option value="">请选择您的工作年限</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
+          <option selected="selected" value="" style="display: none">请选择您的工作年限</option>
+          <option value="1-3年">1-3年</option>
+          <option value="3-5年">3-5年</option>
+          <option value="5-10年">5-10年</option>
+          <option value="10年以上">10年以上</option>
         </select>
         <input type="text" placeholder="请输入您的姓名" class="user-name">
         <input type="text" placeholder="请输入您的电话" class="user-tel">
@@ -92,14 +102,14 @@
       </div>
       <div class="choice-cont">
         <div class="cont-title">国内外MBA录取比例对比表</div>
-        <img src="images/img_1.png" alt="">
+        <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/img_1.png" alt="">
       </div>
     </div>
     <div class="imba-nav">
       <ul>
         <li>
           <div class="li-l">
-            <img src="images/icon_1.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/icon_1.png" alt="">
           </div>
           <div class="li-r">
             <div class="r-title">免国内联考</div>
@@ -108,7 +118,7 @@
         </li>
         <li>
           <div class="li-l">
-            <img src="images/icon_2.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/icon_2.png" alt="">
           </div>
           <div class="li-r">
             <div class="r-title">优质人脉</div>
@@ -117,7 +127,7 @@
         </li>
         <li>
           <div class="li-l">
-            <img src="images/icon_3.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/icon_3.png" alt="">
           </div>
           <div class="li-r">
             <div class="r-title">在职可读</div>
@@ -126,7 +136,7 @@
         </li>
         <li>
           <div class="li-l">
-            <img src="images/icon_4.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/icon_4.png" alt="">
           </div>
           <div class="li-r">
             <div class="r-title">升职加薪</div>
@@ -135,7 +145,7 @@
         </li>
         <li>
           <div class="li-l">
-            <img src="images/icon_5.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/icon_5.png" alt="">
           </div>
           <div class="li-r">
             <div class="r-title">自我提升</div>
@@ -144,7 +154,7 @@
         </li>
         <li>
           <div class="li-l">
-            <img src="images/icon_6.png" alt="">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/icon_6.png" alt="">
           </div>
           <div class="li-r">
             <div class="r-title">含金量高</div>
@@ -163,89 +173,89 @@
       <ul>
         <li>
           <div class="li-bg">
-            <img src="images/xh.png" alt="美国威斯康星协和大学">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/xh.png" alt="美国威斯康星协和大学">
             <span class="bg-title">美国威斯康星协和大学</span>
           </div>
           <div class="li-text">
             <span>学制：1.5年</span>
             <span>授课：面授</span>
           </div>
-          <a href="" class="li-btn">院校详情</a>
+          <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="li-btn">院校详情</a>
         </li>
         <li>
           <div class="li-bg">
-            <img src="images/sfy.png" alt="美国索菲亚大学">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/sfy.png" alt="美国索菲亚大学">
             <span class="bg-title">美国索菲亚大学</span>
           </div>
           <div class="li-text">
             <span>学制：1.5年</span>
             <span>授课：面授</span>
           </div>
-          <a href="" class="li-btn">院校详情</a>
+          <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="li-btn">院校详情</a>
         </li>
         <li>
           <div class="li-bg">
-            <img src="images/ipag.png" alt="法国IPAG高等商学院">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/ipag.png" alt="法国IPAG高等商学院">
             <span class="bg-title">法国IPAG高等商学院</span>
           </div>
           <div class="li-text">
             <span>学制：2年</span>
             <span>授课：面授</span>
           </div>
-          <a href="" class="li-btn">院校详情</a>
+          <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="li-btn">院校详情</a>
         </li>
         <li>
           <div class="li-bg">
-            <img src="images/ny.png" alt="法国南锡高等商学院">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/ny.png" alt="法国南锡高等商学院">
             <span class="bg-title">法国南锡高等商学院</span>
           </div>
           <div class="li-text">
             <span>学制：1.5年</span>
             <span>授课：面授</span>
           </div>
-          <a href="" class="li-btn">院校详情</a>
+          <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="li-btn">院校详情</a>
         </li>
         <li>
           <div class="li-bg">
-            <img src="images/uws.png" alt="英国西苏格兰大学">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/uws.png" alt="英国西苏格兰大学">
             <span class="bg-title">英国西苏格兰大学</span>
           </div>
           <div class="li-text">
             <span>学制：1.5年</span>
             <span>授课：面授</span>
           </div>
-          <a href="" class="li-btn">院校详情</a>
+          <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="li-btn">院校详情</a>
         </li>
         <li>
           <div class="li-bg">
-            <img src="images/gk.png" alt="香港公开大学MBA">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/gk.png" alt="香港公开大学MBA">
             <span class="bg-title">香港公开大学MBA</span>
           </div>
           <div class="li-text">
             <span>学制：1.5年</span>
             <span>授课：面授</span>
           </div>
-          <a href="" class="li-btn">院校详情</a>
+          <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="li-btn">院校详情</a>
         </li>
       </ul>
     </div>
     <div class="imba-down">
-      <a href=""></a>
+      <a href="javascript:void(0)" class="popup-btn"></a>
     </div>
     <div class="imba-schools">
       <div class="imba-title">
         <span>100+</span>热门MBA<span>院校推荐</span>
       </div>
       <ul>
-        <li><img src="images/uow.png" alt=""></li>
-        <li><img src="images/uoc.png" alt=""></li>
-        <li><img src="images/tuw.png" alt=""></li>
-        <li><img src="images/aru.png" alt=""></li>
-        <li><img src="images/hec.png" alt=""></li>
-        <li><img src="images/ist.png" alt=""></li>
-        <li><img src="images/udm.png" alt=""></li>
-        <li><img src="images/ee.png" alt=""></li>
-        <li><img src="images/luc.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/uow.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/uoc.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/tuw.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/aru.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/hec.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/ist.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/udm.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/ee.png" alt=""></li>
+        <li><img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/luc.png" alt=""></li>
         <li class="more">
           <em></em>
           <em></em>
@@ -255,10 +265,153 @@
           <em></em>
         </li>
       </ul>
-      <a href="" class="imba-btn">查看更多</a>
+      <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="imba-btn">查看更多</a>
+    </div>
+    <div class="imba-lce">
+      <div class="imba-title">
+        <span>证书展示</span>
+      </div>
+      <div class="imba-subtitle">满足毕业条件即可获得院校授予学位证书</div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/ccie_1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/ccie_2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/ccie_3.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="imba-win">
+      <div class="win-title">
+        <p>从诺达开始</p>
+        国际名校MBA学位班邀您共赢未来
+      </div>
+      <div class="win-cont">
+        <div class="big-img">
+          <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/queen.png" alt="">
+          <div class="win-txt">英国女王-为伍斯特大学图书馆揭牌</div>
+        </div>
+        <ul>
+          <li>
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/teach.png" alt="">
+            <div class="win-txt">IPAG高等商学院上课</div>
+          </li>
+          <li>
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/outdoor.png" alt="">
+            <div class="win-txt">格林多大学户外拓展活动</div>
+          </li>
+          <li>
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/visit.png" alt="">
+            <div class="win-txt">南锡商学院(上海班)法国参访</div>
+          </li>
+          <li>
+            <img src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/images/graduate.png" alt="">
+            <div class="win-txt">伍斯特大学为学员授予学位</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="imba-classes">
+      <div class="classes-title">
+        2020年春季班优惠大放送报读MBA学费优惠<span>1000元</span>
+      </div>
+      <form class="sign-in">
+        <input type="text" placeholder="请输入您的姓名">
+        <input type="text" placeholder="请输入您的电话">
+        <input type="submit" value="提交申请" class="imba-btn">
+      </form>
+    </div>
+    <div class="imba-footer">
+      <p>版权所有 深圳市诺达教育股份有限公司</p>
+      <p>©粤ICP备10032899号</p>
+    </div>
+    <!-- 底部悬浮 -->
+    <div class="imba-consult">
+      <a href="javascript:void(0)" onclick="ECHATCustomMiniChat()" class="imba-btn">
+        <i class="icon"></i>
+        在线咨询
+      </a>
+    </div>
+    <div class="appoint-popup" id="popup">
+      <div class="masklayer"></div>
+      <div class="popup-cont">
+        <form class="sign-in">
+          <select class="user-con">
+            <option selected="selected" value="" style="display: none">请选择院校</option>
+            <option value="美国威斯康星协和大学">美国威斯康星协和大学</option>
+            <option value="美国索菲亚大学">美国索菲亚大学</option>
+            <option value="法国IPAG高等商学院">法国IPAG高等商学院</option>
+            <option value="法国南锡高等商学院">法国南锡高等商学院</option>
+            <option value="英国西苏格兰大学">英国西苏格兰大学</option>
+            <option value="香港公开大学MBA">香港公开大学MBA</option>
+            <option value="法国诺曼底商管理学院">法国诺曼底商管理学院</option>
+            <option value="BSN荷兰商学院">BSN荷兰商学院</option>
+            <option value="法国ISTEC高等商学院">法国ISTEC高等商学院</option>
+            <option value="比利时列日大学HEC商学院">比利时列日大学HEC商学院</option>
+            <option value="法国蒙彼利埃大学">法国蒙彼利埃大学</option>
+            <option value="法国里昂高等商学院">法国里昂高等商学院</option>
+            <option value="英国奇切斯特大学">英国奇切斯特大学</option>
+            <option value="香港亚洲商学院">香港亚洲商学院</option>
+            <option value="英国开放大学">英国开放大学</option>
+            <option value="马来西亚西特亚大学">马来西亚西特亚大学</option>
+            <option value="马来西亚林肯大学">马来西亚林肯大学</option>
+            <option value="荷兰港商学院">荷兰港商学院</option>
+            <option value="英国安格利亚鲁斯金大学">英国安格利亚鲁斯金大学</option>
+            <option value="美国北利诺伊大学">美国北利诺伊大学</option>
+            <option value="美国西东大学">美国西东大学</option>
+            <option value="波兰热舒夫信息技术与管理大学">波兰热舒夫信息技术与管理大学</option>
+          </select>
+          <input type="text" placeholder="请输入您的姓名" class="user-name">
+          <input type="text" placeholder="请输入您的电话" class="user-tel" maxlength="11">
+          <input type="submit" value="提交信息">
+        </form>
+        <i class="close"></i>
+      </div>
     </div>
 
-  </div> 
+    <script src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
+    <script src="https://img.thea.cn/public/platform/thea/202001/hbj/i-mba/js/index.js"></script>
+
+    <!-- 800咨询软件 -->
+    <script type="text/javascript">
+      var _echatServer = ['v.rainbowred.com'];
+      window._echat = window._echat || function () { (_echat.q = _echat.q || []).push(arguments) }; _echat.l = +new Date;
+      _echat('initParam', { companyId: 378 });
+      _echat('initParam', { echatTag: '竞价-研修' });
+      (function () {
+        var echat = document.createElement('script');
+        echat.type = 'text/javascript';
+        echat.async = true;
+        echat.id = 'echatmodulejs';
+        echat.setAttribute('charset', 'UTF-8');
+        echat.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'vs.rainbowred.com/visitor/echat.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(echat, s);
+      })();
+      function ECHATCustomMiniChat(echatTag, visEvt, lan, metaData, myData, routeEntranceId) {
+        var customObj = {};
+        echatTag && (customObj.echatTag = echatTag);
+        visEvt && (customObj.visEvt = JSON.stringify(visEvt));
+        lan && (customObj.lan = lan);
+        metaData && (customObj.metaData = metaData);
+        myData && (customObj.myData = myData);
+        routeEntranceId && (customObj.routeEntranceId = routeEntranceId);
+        ECHAT.customMiniChat(customObj);
+      }
+    </script>
+  </div>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+    })
+  </script>
 
 </body>
 
